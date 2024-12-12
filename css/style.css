@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.logo img {
+  max-width: 100px;
+}
+.links ul {
+  display: flex;
+  justify-content: space-around;
+  width: 40vw;
+  list-style: none;
+  margin-top: 50px;
+}
+.links li a,
+.login button a {
+  font-size: 22px;
+  text-decoration: none;
+}
+.login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.login button {
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 10px 15px;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+.login img {
+  width: 50px;
+}
+.inicial {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+  align-items: center;
+}
+.visao {
+  color: #7a05ff;
+}
+.barra {
+  font-size: 30px;
+}
+.inicial button {
+  background: #7a05ff;
+  border: none;
+  border-radius: 60px;
+  padding: 15px 20px;
+}
+.inicial img {
+  width: 40px;
+}
+.inicial a {
+  color: white;
+  text-decoration: none;
+}
+.inicial button a {
+  display: flex;
+  align-items: center;
+}
+
+.inicial h2 {
+  font-size: 60px;
+}
+.inicial p {
+  font-size: 20px;
+}
+.computador img {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+}
+.conteudo {
+  width: 50%;
+}
+.conteudo h2 {
+  margin-bottom: 20px;
+}
+.conteudo p {
+  margin-bottom: 20px;
+}
+.conteudo button {
+  margin-bottom: 20px;
+}
+/* projeto pagina */
+.nss-projetos {
+  display: flex;
+  padding: 40px 0 60px 0;
+  justify-content: center;
+  color: #8041fd;
+  font-size: 30px;
+  margin-top: 75px;
+}
+
+.nss-projetos::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 180px;
+  height: 3px;
+  border-radius: 20px;
+  margin: 60px 0 0 0;
+  background: #8041fd;
+}
+.projetos {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.projetos-sect {
+  background: #f0eff5;
+}
+.projetos h1 {
+  margin-bottom: 100px;
+}
+.lapisback {
+  background: rgb(183, 120, 255);
+}
+.rodape {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  background: #bd00ff;
+  max-width: 80%;
+  border-radius: 70px;
+  align-items: center;
+  margin: 0 auto;
+}
+.estrategia img {
+  max-width: 50px;
+  border: 2px solid #8041fd;
+  background: #e6e6e6;
+  padding-left: 3px;
+  border-radius: 50%;
+}
+.estrategia div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.estrategia p,
+.desing p,
+.trafego p {
+  margin: 20px 0 100px 0;
+}
+.desing img {
+  width: 50px;
+  border: 2px solid #8041fd;
+  background: #e6e6e6;
+  padding-left: 3px;
+  border-radius: 50%;
+}
+.desing div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.trafego img {
+  width: 50px;
+  border: 2px solid #8041fd;
+  background: #e6e6e6;
+  padding-bottom: 5px;
+  border-radius: 50%;
+}
+.trafego div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Contato */
+.novidade {
+  display: flex;
+  background: #8041fd;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.novidade h2 {
+  color: white;
+}
+
+.contato-ofc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contato-ofc section {
+  display: grid;
+  width: 50px;
+}
+.formulario-email {
+  align-items: center;
+}
+.h22 {
+  display: flex;
+  padding: 40px 0 60px 0;
+  justify-content: center;
+  color: #8041fd;
+  font-size: 30px;
+  margin-top: 75px;
+}
+.h22::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 240px;
+  height: 3px;
+  border-radius: 20px;
+  margin: 70px 0 0 0;
+  background: #8041fd;
+}
