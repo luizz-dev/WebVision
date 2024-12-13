@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
 }
-html {
-  scroll-behavior: smooth;
-}
 nav {
   display: flex;
   justify-content: space-evenly;
@@ -63,7 +60,7 @@ nav {
   padding: 15px 20px;
 }
 .inicial img {
-  width: 50px;
+  width: 40px;
 }
 .inicial a {
   color: white;
@@ -225,98 +222,4 @@ nav {
   border-radius: 20px;
   margin: 70px 0 0 0;
   background: #8041fd;
-}
-.pergunta1{
-  background-color: #f4e8ff;
-  color: #7a05ff;
-  border: 1px solid #c09be5; 
-  height: 130px;
-  width: 1180px;
-  padding: 15px;
-  cursor: pointer;
-  font-size: 16px;
-  box-shadow: 0 4px 6px rgba(122, 5, 255, 0.2);
-  margin: 0 auto;
-  position: relative;
-  margin-bottom: 20px;
-}
-.pergunta1 p{
-  font-size: 20px;
-  color: black;
-}
-.pergunta1 h2 {
-  display: flex;
-  align-items: center;
-  font-size: 28px;
-  margin-bottom: 30px;
-  margin-top: 16px;
-}
-.perguntatotal{
-  margin-top: 20px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-}
-
-.faq-container {
-  width: 1210px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin: 0 auto;
-}
-details {
-  background-color: #ffffff;
-  color: #7a05ff;
-  border: 1px solid #c09be5; 
-  height: 60px;
-  padding: 15px;
-  cursor: pointer;
-  font-size: 16px;
-  box-shadow: 0 4px 6px rgba(122, 5, 255, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s; 
-  transition: 0.3s ease-in-out;
-  position: relative;
-}
-
-details:hover {
-  box-shadow: 0 6px 10px rgba(122, 5, 255, 0.25); 
-}
-
-details[open] {
-  background-color: #f4e8ff;
-  height: 140px;
-}
-
-summary {
-  list-style: none;
-  outline: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 28px;
-  margin-bottom: 30px;
-  margin-top: 16px;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-.icon {
-  font-size: 18px;
-  color: #7a05ff; 
-  transition: transform 0.3s;
-}
-
-details[open] .icon {
-  transform: rotate(180deg);
-}
-.faq-container p{
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-}
-.faq-container a{
-  text-decoration: none;
-  color: #7a05ff;
 }
