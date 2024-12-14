@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 nav {
   display: flex;
   justify-content: space-evenly;
@@ -21,6 +24,7 @@ nav {
 .login button a {
   font-size: 22px;
   text-decoration: none;
+  color: #000;
 }
 .login {
   display: flex;
@@ -60,7 +64,7 @@ nav {
   padding: 15px 20px;
 }
 .inicial img {
-  width: 40px;
+  width: 50px;
 }
 .inicial a {
   color: white;
@@ -122,6 +126,7 @@ nav {
 }
 .projetos-sect {
   background: #f0eff5;
+  padding-bottom: 30px;
 }
 .projetos h1 {
   margin-bottom: 100px;
@@ -134,10 +139,42 @@ nav {
   justify-content: center;
   gap: 10%;
   background: #bd00ff;
-  max-width: 80%;
+  max-width: 75%;
   border-radius: 70px;
   align-items: center;
   margin: 0 auto;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.estrategia,
+.trafego,
+.desing {
+  max-height: 190px;
+  max-width: 500px;
+}
+.estrategia,
+.trafego {
+  border: 2px solid #dccaff;
+  border-radius: 50px;
+  color: #fff;
+}
+.estrategia div,
+.desing div,
+.trafego div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+.estrategia p,
+.desing p,
+.trafego p {
+  margin: 20px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  padding: 0 15px;
 }
 .estrategia img {
   max-width: 50px;
@@ -146,15 +183,10 @@ nav {
   padding-left: 3px;
   border-radius: 50%;
 }
-.estrategia div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.estrategia p,
-.desing p,
-.trafego p {
-  margin: 20px 0 100px 0;
+.desing {
+  background: #dccaff;
+  border-radius: 60px;
+  max-width: 330px;
 }
 .desing img {
   width: 50px;
@@ -166,6 +198,8 @@ nav {
 .desing div {
   display: flex;
   align-items: center;
+  margin-left: -20px;
+  font-size: 19px;
   gap: 10px;
 }
 .trafego img {
@@ -180,31 +214,96 @@ nav {
   align-items: center;
   gap: 10px;
 }
-
-/* Contato */
-.novidade {
+/* Serviço */
+.servicos-h2 {
   display: flex;
-  background: #8041fd;
-  align-items: center;
-  text-align: center;
   justify-content: center;
-  font-size: 30px;
+  align-items: center;
+  margin-top: 50px;
+  gap: 40px;
 }
-.novidade h2 {
+.servicos-h2 div {
+  content: "";
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  width: 400px;
+  height: 5px;
+  background: #c6c6c6;
+  border-radius: 20px;
+}
+.servicos-h2 h2 {
+  font-size: 60px;
+  color: #8041fd;
+}
+.servico1 {
+  background: rgb(255, 255, 255);
+  width: 400px;
+  height: 500px;
+  padding: 25px;
+  box-sizing: border-box;
+  border: 5px solid black;
+  padding-top: 60px;
+}
+
+.servico2 {
+  background: rgb(76, 0, 255);
+  width: 400px;
+  border: 5px solid rgb(0, 0, 0);
+  height: 500px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.servico1,
+.servico2 {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.servicototal {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 70px 0 150px 0;
+}
+.servico1 i {
+  font-size: 110px;
+  color: rgb(0, 0, 0);
+}
+.servico2 i {
+  font-size: 110px;
+  color: white;
+}
+.servico1 h2 {
+  font-size: 45px;
+  color: rgb(0, 0, 0);
+}
+.servico1 p {
+  font-size: 22px;
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+}
+.servicototal::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 60%;
+  height: 5px;
+  margin-top: 540px;
+  box-shadow: 0px 10px 30px #000;
+  border-radius: 20px;
+  background: #272727;
+}
+.servico2 h2 {
+  font-size: 35px;
+  color: white;
+}
+.servico2 p {
+  font-size: 25px;
+  margin-top: 20px;
   color: white;
 }
 
-.contato-ofc {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.contato-ofc section {
-  display: grid;
-  width: 50px;
-}
-.formulario-email {
-  align-items: center;
-}
+/* perguntas frequentes */
 .h22 {
   display: flex;
   padding: 40px 0 60px 0;
@@ -212,6 +311,7 @@ nav {
   color: #8041fd;
   font-size: 30px;
   margin-top: 75px;
+  padding: 50px 0 80px 0;
 }
 .h22::after {
   content: "";
@@ -222,4 +322,196 @@ nav {
   border-radius: 20px;
   margin: 70px 0 0 0;
   background: #8041fd;
+}
+.pergunta1 {
+  background-color: #f4e8ff;
+  color: #7a05ff;
+  border: 1px solid #c09be5;
+  height: 130px;
+  width: 1180px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(122, 5, 255, 0.2);
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+.pergunta1 p {
+  font-size: 20px;
+  color: black;
+}
+.pergunta1 h2 {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+.perguntatotal {
+  margin-top: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-container {
+  width: 1210px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+details {
+  background-color: #ffffff;
+  color: #7a05ff;
+  border: 1px solid #c09be5;
+  height: 60px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(122, 5, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+
+details:hover {
+  box-shadow: 0 6px 10px rgba(122, 5, 255, 0.25);
+}
+
+details[open] {
+  background-color: #f4e8ff;
+  height: 140px;
+}
+
+summary {
+  list-style: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.icon {
+  font-size: 18px;
+  color: #7a05ff;
+  transition: transform 0.3s;
+}
+
+details[open] .icon {
+  transform: rotate(180deg);
+}
+.faq-container p {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  transition: 0.3s ease-in-out;
+}
+
+.faq-container a {
+  text-decoration: none;
+  color: #7a05ff;
+}
+.final {
+  margin-bottom: 90px;
+}
+#perguntas {
+  background-color: #f0f0f0;
+}
+
+/* Contato */
+.novidade {
+  display: flex;
+  background: #8041fd;
+  align-items: center;
+  text-align: end;
+  justify-content: center;
+  font-size: 30px;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 70vw;
+  border-radius: 560px;
+  height: 170px;
+  gap: 20px;
+}
+.contato form {
+  display: flex;
+  gap: 5px;
+}
+.contato #btn-submit {
+  height: 60px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  background: #bd00ff;
+  color: #fff;
+}
+.novidade h2 {
+  color: white;
+}
+
+#quer-cnt {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 60px 0;
+  font-size: 32px;
+}
+.contato-ofc {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 50px 0;
+}
+.contato-ofc div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+textarea {
+  width: 250%;
+  height: 238px;
+  background: #dccaff;
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+}
+.contato-ofc section {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 5px;
+  margin-left: -25vw;
+  margin-right: 4vw;
+  border: 2px solid #8041fd;
+  padding: 30px;
+  border-radius: 20px;
+}
+.contato-ofc section label {
+  font-size: 22px;
+}
+.contato-ofc section input {
+  height: 40px;
+  border-radius: 10px;
+}
+.contato-ofc section button {
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #8041fd;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background: black;
+  display: flex;
 }
