@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/logo_webvision-removebg-preview.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -43,59 +45,60 @@
     </div>
   </div>
 </div>
-  <div class="contact">
-    <a href="#">
-      CONTACT US <i id="arrow" class="bi bi-chevron-right"></i>
-    </a>
-  </div>
+
   <!-- Projetos -->
 
-  <section class="projetos-sect" id="projetos">
-    <div class="nss-projetos">
-      <h1>Nossos Projetos</h1>
-    </div>
-    <section class="projetos">
-      <h1>Projeto</h1>
-      <h1>Projeto</h1>
-      <h1>Projeto</h1>
-      <h1>Projeto</h1>
-      <h1>Projeto</h1>
-      <h1>Projeto</h1>
+    <section class="projetos-sect" id="projetos">
+      <section id="home" data-aos="fade-up">
+      <div class="nss-projetos">
+        <h1>Nossos Projetos</h1>
+      </div>
+      <section class="projetos">
+        <h1>Projeto</h1>
+        <h1>Projeto</h1>
+        <h1>Projeto</h1>
+        <h1>Projeto</h1>
+        <h1>Projeto</h1>
+        <h1>Projeto</h1>
+      </section>
+      <section class="rodape">
+        <div class="estrategia">
+          <div><img src="img/globo-roxo.png" alt="globo branco">
+            <h1>Estrategia Digital</h1>
+          </div>
+          <p>Criamos soluções estratégicas para <br> impulsionar sua marca online, combinando <br> performance com inovação para alcançar <br> resultados consistentes.</p>
+        </div>
+        <div class="desing">
+          <div class="">
+            <img src="img/lapis.png" alt="">
+            <h1>Desing Criativo</h1>
+          </div>
+          <p>Nosso design alia modernidade e <br>funcionalidade, criando experiências digitais <br> únicas que conectam seu público à sua marca.</p>
+        </div>
+        <div class="trafego">
+          <div>
+            <img src="img/svg/tabela-removebg-preview.png" alt="tabela">
+            <h1>Tráfego Pago</h1>
+          </div>
+          <p>Gestão de anúncios otimizados no <br>Google e nas redes sociais, focando em resultados <br> que realmente importam: conversão e <br> crescimento.</p>
+        </div>
+      </section>
     </section>
-    <section class="rodape">
-      <div class="estrategia">
-        <div><img src="img/globo-roxo.png" alt="globo branco">
-          <h1>Estrategia Digital</h1>
-        </div>
-        <p>Criamos soluções estratégicas para <br> impulsionar sua marca online, combinando <br> performance com inovação para alcançar <br> resultados consistentes.</p>
-      </div>
-      <div class="desing">
-        <div class="">
-          <img src="img/lapis.png" alt="">
-          <h1>Desing Criativo</h1>
-        </div>
-        <p>Nosso design alia modernidade e <br>funcionalidade, criando experiências digitais <br> únicas que conectam seu público à sua marca.</p>
-      </div>
-      <div class="trafego">
-        <div>
-          <img src="img/svg/tabela-removebg-preview.png" alt="tabela">
-          <h1>Tráfego Pago</h1>
-        </div>
-        <p>Gestão de anúncios otimizados no <br>Google e nas redes sociais, focando em resultados <br> que realmente importam: conversão e <br> crescimento.</p>
-      </div>
-    </section>
+  
   </section>
-
+ 
 
   <!-- Contato -->
-
+  <section id="home" data-aos="fade-up">
+    
   <section class="contato">
     <div class="novidade">
       <h2>Não perca nenhuma novidade!!</h2>
-      <form action="" class="formulario-email">
-        <input type="email" placeholder="Info@gmail.com" style="width: 80%;height: 38px; padding: 10px; margin: 5px; border-radius: 8px; border: none;">
-        <input type="submit" id="btn-submit" name="" value="Inscrever" />
+      <form action="" class="formulario-email" onsubmit="return alterarTextoBotao()">
+        <input type="email" placeholder="Info@gmail.com" style="width: 80%;height: 38px; padding: 10px; margin: 5px; border-radius: 8px; border: none;outline: none;;" required>
+        <input type="submit" id="btn-submit" value="Enviar" />
       </form>
+      
     </div>
 
     <h1 id="quer-cnt">Quer um contato mais direto com nossa equipe?</h1>
@@ -117,10 +120,13 @@
     </form>
   </section>
 
+<!-- HTML -->
+
 
   <!-- Perguntas Frequentes -->
 
   <section id="perguntas">
+  <section id="home" data-aos="fade-up">
     <div class="h22">
       <h2>Perguntas Frequentes</h2>
     </div>
@@ -155,65 +161,80 @@
         <p>A Web Vision garante isso por meio de reuniões detalhadas para entender as necessidades do cliente, protótipos aprovados antes do desenvolvimento
           e testes rigorosos para assegurar a funcionalidade e a satisfação com o resultado final.</p>
       </details>
-      <details>
+      <details class="final-details">
         <summary>Quais são as redes sociais da Web Vision?<i class="bi bi-chevron-down icon"></i></summary>
         <p>As redes sociais da Web Vision são: Instagram, Tiktok e X. Siga-nos para acompanhar novidades e projetos!</p>
       </details>
     </div>
   </section>
+</section>
+
 
   <!-- Serviços -->
 
+  <section id="home" data-aos="fade-up">
 
-  <section id="servicos">
-    <h2>Serviços</h2>
-   <p>O Web Vision permite gerenciar seu negócio com facilidade, integrando vendas, estoque, finanças e muito mais. Use-o para otimizar sua operação e simplificar sua gestão!</p>
-  </section>
-  <section class="servicototal">
-    <div class="servico1">
-      <i class="bi bi-people"></i>
-      <h2>Nossa equipe</h2>
-      <p>
-        Nós somos a Web Vision, uma equipe especializada em desenvolver sites modernos, intuitivos e totalmente personalizados para atender às necessidades dos nossos clientes. </p>
-    </div>
-    <div class="servico2">
-      <i class="bi bi-briefcase"></i>
-      <h2>Experimente o Web Vision</h2>
-      <p>Com a Web Vision, você terá mais do que um site: terá uma ferramenta poderosa para impulsionar seu negócio. </p>
-    </div>
-    <div class="servico1">
-      <i class="bi bi-card-checklist"></i>
-      <h2>Check-List</h2>
-      <div class="check">
-        <p>Programadores Capacitados <br> Exelente Atendimento
-          <br> Sites responsivos <br> Preço baixo
-        </p>
+    <section class="servicos">
+      <div class="container-servicos">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos soluções sob medida para atender às suas necessidades.</p>
+        <div class="cards">
+          <div class="card">
+            <div class="icon">
+              <i class="bi bi-people"></i>
+            </div>
+            <h3>Desenvolvimento Web</h3>
+            <p>Sites modernos e responsivos, otimizados para performance e SEO.</p>
+          </div>
+    
+          <div class="card">
+            <div class="icon">
+              <i class="bi bi-briefcase"></i>
+            </div>
+            <h3>Design Gráfico</h3>
+            <p>Identidade visual impactante e materiais criativos para sua marca.</p>
+          </div>
+    
+          <div class="card">
+            <div class="icon">
+              <i class="bi bi-card-checklist"></i>
+            </div>
+            <h3>Consultoria</h3>
+            <p>Planejamento estratégico para alavancar seus negócios online.</p>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
+</section>
 
-  <footer>
-    <div class="rodape-conteudo">
-      <div class="rodape-sobre">
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-linkedin"></i>
-        <i class="bi bi-tiktok"></i>
-      </div>
-      <div class="rodape-links">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#perguntas">Perguntas</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-        </ul>
+<!-- footer -->
+<footer class="footer">
+  <div class="conteudo-footer">
+    <div class="titulo-redes-sociais">
+      <h2>Também temos Redes Sociais</h2>
+      <div class="cartao">
+        <div class="icones">
+          <img src="img/insta.png" alt="">
+          <img src="img/images-removebg-preview (1).png" alt="">
+          <img src="img/x-removebg-preview.png" alt="">
+        </div>
       </div>
     </div>
-    <div class="rodape-direitos">
-      <p>&copy; Web Vision. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+    <p>Todos direitos reservados@</p>
+  </div>
+</footer>
+
 
   <script src="js/script.js"></script>
- 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, 
+      once: true,    
+    });
+  </script>
+  
 </body>
 
 </html>

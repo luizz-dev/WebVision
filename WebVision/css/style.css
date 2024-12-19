@@ -331,6 +331,7 @@ textarea {
 }
 
 /* perguntas frequentes */
+
 .h22 {
   display: flex;
   padding: 40px 0 60px 0;
@@ -421,7 +422,9 @@ summary {
   margin-bottom: 30px;
   margin-top: 16px;
 }
-
+.final-details{
+  margin-bottom: 60px;
+}
 summary::-webkit-details-marker {
   display: none;
 }
@@ -450,107 +453,150 @@ details[open] .icon {
 }
 #perguntas {
   background-color: #f0f0f0;
+  height: auto;
 }
 
 /* Serviço */
-.servico1 {
-  background: rgb(255, 255, 255);
-  width: 500px;
-  height: 600px;
-  padding: 25px;
-  box-sizing: border-box;
-  border: 5px solid black;
-}
-
-.servico2 {
-  background: rgb(76, 0, 255);
-  width: 500px;
-  border: 5px solid rgb(0, 0, 0);
-  height: 600px;
-  padding: 25px;
-  box-sizing: border-box;
-}
-.servico1,
-.servico2 {
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+.servicos {
+  padding: 50px 20px;
+  background-color: #ffffff;
   text-align: center;
 }
-.servicototal {
+
+.container-servicos {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicos h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #7a05ff;
+}
+
+.servicos p {
+  font-size: 1.1em;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+.cards {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
-.servico1 i {
-  font-size: 170px;
-  color: rgb(0, 0, 0);
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.servico2 i {
-  font-size: 170px;
-  color: white;
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
-.servico1 h2 {
-  font-size: 50px;
-  color: rgb(0, 0, 0);
+
+.card .icon i {
+ font-size: 60px;
+  margin-bottom: 20px;
 }
-.servico1 p {
-  font-size: 30px;
-  margin-top: 20px;
-  color: rgb(0, 0, 0);
+
+.card h3 {
+  font-size: 1.5em;
+  color: #333333;
+  margin-bottom: 10px;
 }
-.servico2 h2 {
-  font-size: 50px;
-  color: white;
+
+.card p {
+  font-size: 1em;
+  color: #666666;
 }
-.servico2 p {
-  font-size: 30px;
-  margin-top: 20px;
-  color: white;
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Footer */
-footer {
-  background: black;
-  display: flex;
-}
 
-
-.contact a {
+.footer {
+  background-color: #a36cf5; 
+  padding: 20px;
   color: white;
-  background-color: #7a05ff;
-  padding: 20px 20px;
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: 15px;
-  display: inline-flex; 
-  align-items: center; 
-  justify-content: center; 
-  gap: 10px; 
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.conteudo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-redes-sociais {
+  display: flex;
+  align-items: center;
+  gap: 200px; 
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.titulo-redes-sociais h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.titulo-redes-sociais h2::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  border: 5px solid rgb(207, 183, 252);
+  top: 70%;
+  left: -20px;
+  transform: translateY(-50%);
+  border-top: none;
+  border-right: none;
+}
+
+.titulo-redes-sociais h2::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  border: 5px solid rgb(207, 183, 252);
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  border-bottom: none;
+  border-left: none;
+}
+
+.cartao {
+  background-color: #6a0dad;
+  border-radius: 10px;
+  padding: 40px 40px;
+  box-shadow: 10px 10px 0px #ffffff; 
+}
+
+.icones img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
 }
 
 
-.contact a:hover {
-  background-color: #5a03c6; 
-  transform: scale(1.05); 
+.conteudo-footer p {
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
-
-
-i#arrow {
-  opacity: 0; 
-  transform: translateX(-10px) scale(0.8);
-  transition: transform 0.4s ease, opacity 0.4s ease;
-}
-
-
-a:hover i#arrow {
-  opacity: 1;
-  transform: translateX(0) scale(1); 
-}
-
-
-.contact {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
-
