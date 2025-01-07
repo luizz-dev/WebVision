@@ -67,3 +67,76 @@ botaoFechar.addEventListener("click", fecharModal);
 botaoFecharC.addEventListener("click", fecharModalC);
 cadastroBtn.addEventListener("click", abrirModalC);
 loginBtn.addEventListener("click", abrirModalBtn);
+// Seleciona os elementos dos modais
+const modalLogin = document.querySelector('[data-modal="container"]');
+const modalCadastro = document.querySelector('[data-modal="container-cadastro"]');
+
+// Seleciona os botões
+const btnFecharLogin = document.querySelector('[data-modal="fechar"]');
+const btnFecharCadastro = document.querySelector('[data-modal="fechar-cadastro"]');
+const btnCadastroLogin = document.querySelector('[data-modal="btn-cadastro"]');
+const btnLoginCadastro = document.querySelector('[data-modal="btn-login"]');
+
+// Eventos para abrir e fechar os modais
+btnCadastroLogin.addEventListener('click', () => {
+  modalLogin.classList.remove('active');
+  modalCadastro.classList.add('active');
+});
+
+btnLoginCadastro.addEventListener('click', () => {
+  modalCadastro.classList.remove('active');
+  modalLogin.classList.add('active');
+});
+
+btnFecharLogin.addEventListener('click', () => {
+  modalLogin.classList.remove('active');
+});
+
+btnFecharCadastro.addEventListener('click', () => {
+  modalCadastro.classList.remove('active');
+});
+
+// Função para cadastrar um usuário
+const formCadastro = modalCadastro.querySelector('form');
+formCadastro.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const nome = document.getElementById('nome-cadastro').value;
+  const email = formCadastro.querySelector('input[type="email"]').value;
+  const senha = document.getElementById('senha-cadastro').value;
+
+  if (!nome || !email || !senha) {
+    alert('Preencha todos os campos!');
+    return;
+  }
+
+  localStorage.setItem('user', JSON.stringify({ nome, email, senha }));
+  alert('Cadastro realizado com sucesso! Faça login.');
+  
+  formCadastro.reset();
+  modalCadastro.classList.remove('active');
+  modalLogin.classList.add('active');
+});
+
+// Função para realizar o login
+const formLogin = modalLogin.querySelector('form');
+formLogin.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const email = formLogin.querySelector('input[type="email"]').value;
+  const senha = formLogin.querySelector('#senha').value;
+
+  const user = JSON.parse(localStorage.getItem('user'));
+
+  if (!user) {
+    alert('Nenhum usuário cadastrado. Por favor, cadastre-se primeiro.');
+    return;
+  }
+
+  if (email === user.email && senha === user.senha) {
+    alert(`Bem-vindo(a), ${user.nome}!`);
+    formLogin.reset();
+  } else {
+    alert('Email ou senha incorretos.');
+  }
+});

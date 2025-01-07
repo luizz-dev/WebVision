@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .perfil-usuario {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .perfil-usuario:hover {
+    transform: scale(1.02);
+  }
+  
+  .perfil-usuario h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .perfil-usuario p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #7f8c8d;
+  }
+  
+  .senha-container {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  #senha-usuario {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+  
+  #senha-usuario:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  #toggle-eye {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  #toggle-eye:hover {
+    transform: translateY(-50%) scale(1.2);
+  }
+  
+  #logout {
+    padding: 12px 24px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  #logout:hover {
+    background-color: #c0392b;
+  }
+  
+  #logout:focus {
+    outline: none;
+  }
+  
+  .modal-container {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .modal-container.active {
+    opacity: 1;
+  }
+  
+  .modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
